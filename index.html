@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balatro ReTag</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <h1>Balatro ReTag</h1>
+  <label>Upload <span title="Found at %APPDATA%\Balatro\"><u style="text-decoration: underline dotted">save.jkr</u></span> file: </label>
+  <br>
+  <input type="file" id="saveFile">
+  <br>
+  <div>
+    <button id="fixFile" disabled>Attempt fix & download</button>
+    <p id="isBugged"></p>
+    <label for="fileOutput"></label><textarea id="fileOutput"></textarea>
+  </div>
+  <p>
+    This page was made to fix Balatro's <a href="https://discord.com/channels/1116389027176787968/1237542994186604564/1237543106749136989"> double tag bug</a>, <a href="https://www.youtube.com/watch?v=7m6RR7LHmAw">shop overlay bug</a> and <a href="https://discord.com/channels/1116389027176787968/1300988763186397205">skipping bugged boosters</a>.
+    <br>
+    See Github <a href="https://github.com/larswijn/BalatroReTag">source code</a>. Design inspired by <a href="https://balatro.shorty.systems">Balatro Save Editor</a>.
+  </p>
+
+  <script type="module" src="./js/retag.js"></script>
+
+</body>
+
+</html>
